@@ -13,6 +13,19 @@ public  class MyLinkedList {
             head.next = tempNode;
         }
     }
+    public void append(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            this.head = newNode;
+            this.tail = newNode;
+        }else {
+            Node tempNode = head;
+            while (tempNode.next != null) {
+                tempNode = tempNode.next;
+            }
+            tempNode.next = newNode;
+        }
+    }
     public void display(){
         Node current = head;
         if (current == null) {
