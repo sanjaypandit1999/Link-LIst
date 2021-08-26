@@ -35,6 +35,10 @@ public  class MyLinkedList {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+    public void pop(){
+        if (head != null)
+        head = head.next;
+    }
 
     public void display(){
         Node current = head;
