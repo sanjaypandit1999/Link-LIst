@@ -39,6 +39,15 @@ public  class MyLinkedList {
         if (head != null)
         head = head.next;
     }
+    
+    public void popLast(){
+        Node temp = head;
+        while (temp.next!= null){
+            tail = temp;
+            temp = temp.next;
+        }
+        tail.next = null;
+    }
 
     public void display(){
         Node current = head;
