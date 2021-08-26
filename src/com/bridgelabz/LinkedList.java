@@ -10,7 +10,7 @@ public class LinkedList {
         list.append(56);
         list.append(70);
         list.append(30);
-        list.popLast();
+        list.searh(30);
         list.display();
     }
 }

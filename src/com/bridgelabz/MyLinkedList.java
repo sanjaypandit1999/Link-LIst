@@ -35,11 +35,21 @@ public  class MyLinkedList {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+
     public void pop(){
         if (head != null)
         head = head.next;
     }
-    
+    public void searh(int data){
+        Node temp = head;
+        while(temp != null){
+            if(temp.data == data){
+                System.out.println("element is found " +temp.data);
+                break;
+            }
+            temp= temp.next;
+        }
+    }
     public void popLast(){
         Node temp = head;
         while (temp.next!= null){
